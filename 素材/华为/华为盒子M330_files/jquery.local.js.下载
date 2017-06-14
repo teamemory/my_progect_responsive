@@ -1,0 +1,136 @@
+/**
+*@desc: Plugin - local language optimize
+*@date: 2015/2/25
+*@author: Youlion
+*/
+!function($){
+	function getURLParam(n) {
+		var m = decodeURIComponent(window.location.href).match(new RegExp("[?&]" + n + "=([^=&]*)(&|$)"));
+		return m ? m[1]: null;
+	}
+	function getLanguage() {
+		return (navigator.language ? navigator.language : navigator.browserLanguage).toLowerCase();
+	}
+	(function(d, id) {
+		if (d.getElementById(id)) return;
+		var lang = "default";//getLanguage();
+		var site = getURLParam("s");
+		lang = site ? site : lang;
+		d.write("<script id='" + id + "' type = 'text/javascript' charset='utf-8' src='assets/lang/" + lang + ".js'></script>");
+	}(document, "local-jssdk"));
+	$(document).ready(function(){
+		$("*[data-field-ref]").each(function(){
+			var field = $(this).data("field-ref");
+			if(window[field])$(this).html(window[field]);
+		})
+		$("*[data-property-href]").each(function(){
+			var prop = $(this).data("property-href");
+			if(window[prop])$(this).attr("href",window[prop]);
+		})
+	});
+}(jQuery)
+
+
+$(function(){
+	dropMenu({
+		$ele: '#detailNavShare',
+		contSelector: '.pro-share-md',
+		acClass: 'pro-share-open'
+	});
+
+	dropMenu({
+		$ele: '#proBuyMulti',
+		contSelector: '.buy-methods',
+		acClass: 'pro-buy-open'
+	});
+
+	eleToFixed($('#minisiteNavbar'), {
+		className: 'min-nav-bar-fixed' 
+	});
+});
+
+// 添加展开菜单方法
+function dropMenu(options){
+	var defaults = {
+		$ele: null,
+		etype: 'mouseenter',
+		contSelector: '',
+		acClass: ''
+	};
+	var opts = $.extend(defaults, options);
+	var $ele = $(opts.$ele);
+	var acClass = 'drop-open';
+	var contSelector = opts.contSelector ? opts.contSelector : '.js-drop-cont';
+	
+	if(!$ele || ($ele && $ele.length < 1)){
+		return;
+	}
+	
+	acClass = opts.acClass ? opts.acClass + ' ' + acClass : acClass;
+	if(opts.etype === 'mouseenter'){
+		$ele.on(opts.etype, function(){
+			var $this = $(this);
+			$this.addClass(acClass);
+			$this.find(contSelector).show();
+		});
+		$ele.on('mouseleave', function(){
+			var $this = $(this);
+			$this.removeClass(acClass);
+			$this.find(contSelector).hide();
+		});
+	}else if(opts.etype === 'click'){
+		$ele.on(opts.etype, function(){
+			var $this = $(this);
+			$this.addClass(acClass);
+			$this.find(contSelector).show();
+			return false;
+		});
+		$(document).on('click', function(){
+			var $this = $(this);
+			$this.removeClass(acClass);
+			$this.find(contSelector).hide();
+		});
+	}
+}
+
+// fixed element on scroll
+var eleToFixed = (function(){
+    var id = 0;
+    
+    return function($ele, options){
+        var defaults = {
+            'className': 'fixed',
+            place: true,
+            distance: 0
+
+        };
+        var opts = $.extend(defaults, options);
+        $ele = $($ele);
+        var ot = opts.distance ? opts.distance : $ele.offset().top;
+        var className = opts.className;
+        var $place;
+        
+        if(opts.place){
+            $place = $('<div id="eleToFixedPlace_'+ (++id) +'"></div>');
+            $place.css({
+                display: 'none',
+                width: $ele.outerWidth(true),
+                height: $ele.outerHeight(true),
+                opacity: 0
+            });
+            $ele.after($place);
+        }
+
+        $(window).on('scroll.eleToFixed', function(){
+            // offset.top possible change when layout changed, so here get it on scroll
+            ot = opts.distance ? opts.distance : $ele.hasClass(className) ? ot : $ele.offset().top;
+            if($(this).scrollTop() >= ot){
+                $ele.addClass(className);
+                opts.place && $place.show();
+            }else{
+                $ele.removeClass(className);
+                opts.place && $place.hide();
+            }
+        });
+    }
+})();

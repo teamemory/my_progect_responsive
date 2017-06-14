@@ -1,0 +1,241 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, "SimHei", Arial, sans-serif;
+    margin-top: 50px;
+    background: #7A6280;
+}
+.logo {
+    display: inline-block;
+    width: 166px;
+    height: 42px;
+    background: url("../img/logo.png") 0 0 no-repeat;
+    margin-top: 4px;  /*Bootstrap不知道图片高度，需要手工调整*/
+}
+.nav1{
+    margin: 0 20px;
+}
+.dn-main{
+    margin:20px 15px 0 15px;
+}
+.dn-big img,
+.dn-small img{
+
+
+    width: 100%;
+    height: 100%;
+}
+.dn-small img{
+    margin-bottom: 2.8%;
+}
+/*小于768px时便取消浮动*/
+@media screen and (min-width: 768px){
+    .dn-big,
+    .dn-small {
+        position: relative;
+    }
+
+    .dn-caption {
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 114px;
+        right: 0;
+        color: #fff;
+    }
+}
+/*平板*/
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .footer_icon ul{
+        margin: 0 auto;
+    }
+    .footer_icon ul{
+        margin: 0 auto;
+        width: 15%;
+    }
+    .sm_main{
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 929px){
+    .nav1 li a{
+        padding-right: 0;
+    }
+    .footer_icon ul{
+        margin: 0 auto;
+        width: 15%;
+    }
+}
+.main1 img{
+    width: 100%;
+
+}
+.m1 h3{
+    width: 80%;
+    margin: 0 auto;
+}
+.m1 div{
+    width: 80%;
+    margin: 5% auto;
+}
+
+/*尾部*/
+.footer{
+    background: black;
+    color: #CCCCCC;
+    padding:2%;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+    /*background: #fff;*/
+
+}
+
+.media_1{
+    width: 100%;
+}
+.news{
+    margin:2%;
+    color: #fff;
+}
+.fade{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.in{
+    opacity: 1;
+    height:100%;
+}
+
+/*视频*/
+.video{
+    position: relative;
+}
+.ad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+.btn-control{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+/*底部与联系*/
+.bottom_lianxi{
+    width: 100%;
+    margin: 0 auto;
+    background: black;
+    color:#fff;
+    margin-top: 2%;
+
+}
+.fade{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.in{
+    opacity: 1;
+    height:100%;
+}
+.dibu{
+    /*background: #fff;*/
+    padding: 0;
+}
+.dibu ul{
+    background: #fff;
+}
+.dibu li{
+    color: black;
+    padding: 2% 2%;
+    border-bottom: 1px solid #dddddd;
+}
+.dibu h4{
+    background: black;
+    margin: 0;
+    padding: 2% 2%;
+}
+.bottom_lianxi .text-center{
+    padding-top: 1%;
+}
+
+/*智慧城市浮动*/
+@media screen and (min-width: 768px) {
+    .carousel{
+        position: relative;
+    }
+    .zhih{
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        color: #fff;
+    }
+    .zhih h1{
+        font-size: 4em;
+    }
+    .zhih p{
+        font-size: 2em;
+    }
+    .bottom_lianxi{
+        padding: 1%;
+    }
+}
+/*阴影动画*/
+.sdbg{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.shadow1 .title{
+    position: absolute;
+    top:-10%;
+    left: 35%;
+    color: #fff;
+    font-size: 3em;
+    transition: all 0.3s ease 0s;
+}
+.shadow1{
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    z-index: 10;
+
+}
+.dn-big:hover .shadow1{
+    opacity: 1;
+}
+/*.dn-big:hover img{*/
+    /*transform:translate(-10px);*/
+/*}*/
+.dn-big:hover .shadow1 .title{
+    top:42%;
+}
+
+.dn-small:hover .shadow1{
+    opacity: 1;
+}
+/*.dn-big:hover img{*/
+/*transform:translate(-10px);*/
+/*}*/
+.dn-small:hover .shadow1 .title{
+    top:42%;
+}
+
+/*轮播图片上面的图片*/
+.carousel{
+    position: relative;
+}
+.bgtp{
+    position: absolute;
+    top:15%;
+    left: 20%;
+}

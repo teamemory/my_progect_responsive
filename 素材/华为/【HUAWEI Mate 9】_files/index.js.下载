@@ -1,0 +1,22 @@
+var isdisn = false;
+var disnTime;
+var sdw_hw = new sdw_hw({
+    mainObj: $("#sdw-wrap"),
+    containerObj: $(".sdw-container"),
+    animateObj: ".sdw-animate",
+    easing: "easeIn",
+    topHalf:0.5,
+    bottomHalf:0.5,
+    single: [
+
+    ],
+    addEvent: function (self) {
+        self.addClass("active");
+    },
+    removeEvent: function (self) {
+        self.removeClass("active");
+    },
+    imgCompEvent: function () {
+        sdw_hw.setHeight();
+    }
+});

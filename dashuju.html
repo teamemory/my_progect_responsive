@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大数据云计算</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/dashuju.css"/>
+    <style>
+        /*自定义样式优先级必须高于Bootstrap的选择器*/
+        .carousel  .carousel-inner  .item  img {
+            width: 100%;
+        }
+    </style>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+</head>
+<body>
+    <!--导航条-->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="nav1">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="huawei.html"></a>
+                <a data-toggle="collapse" href="#top-menu" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <div id="top-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav nav1">
+                    <li class="active"><a href="#">我想</a></li>
+                    <li ><a href="#">个人及家用产品</a></li>
+                    <li><a href="#">商用解决方案</a></li>
+                    <li><a href="dashuju.html" target="_blank">技术支持</a></li>
+                </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="dropdown" href="#">登录</a></li>
+            </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- 轮播图-->
+    <div id="ad6" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!--轮播内部(inner)：会随着广告滚动的-->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/banner4.jpg">
+            </div>
+            <div class="item">
+                <img src="img/banner5.jpg">
+            </div>
+            <div class="item">
+                <img src="img/banner6.jpg">
+            </div>
+
+        </div>
+
+        <!--前进后退按钮不随内容滚动，不属于inner-->
+        <a data-slide="prev" href="#ad6" class="carousel-control left">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a data-slide="next" href="#ad6" class="carousel-control right">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <!--序号指示器不随内容滚动，不属于inner-->
+        <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#ad6" class="active"></li>
+            <li data-slide-to="1" data-target="#ad6"></li>
+            <li data-slide-to="2" data-target="#ad6"></li>
+        </ul>
+    </div>
+<!--为什么选择华为-->
+    <div class="why">
+        <!-- 为什么大标题-->
+        <p class="text-center choice">为什么选择华为</p>
+        <!-- 开放混合集成-->
+
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <p class="text-center choice_little">开放</p>
+                <p class="text-center">源于开源、强于开源、回馈开源，
+                    开源社区的领先者。</p>
+                <img src="img/1.1.png" alt="" class="img-responsive"/>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p class="text-center choice_little">混合</p>
+                <p class="text-center">统一云架构支撑私有云、公有云、混合云，
+                    实现完美互联互通</p>
+                <img src="img/2.2.png" alt="" class="img-responsive"/>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p class="text-center choice_little">集成</p>
+                <p class="text-center">最全面ICT基础设施提供商，
+                    端到端集成交付能力和丰富行业实践</p>
+                <img src="img/3.3.png" alt="" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+    <!-- 行业云与大数据-->
+    <div class="industry">
+        <div class="industry_project">
+            <div class="row">
+                <div class="col-xs-8">
+                    <p>行业云与大数据</p>
+                    <h3>凭借对行业客户的深刻理解，基于FusionCloud统一云架构平台，提供差异化的云计算大数据解决方案，满足各行业用户在不同发展阶段，多种应用场景下的数字化转型需求。</h3>
+                </div>
+                <div class="col-xs-4">
+                    <img src="img/indus1.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 行业云与大数据下面内容-->
+    <div class="industry_detail">
+        <!-- 引导列--政务云-->
+        <div class="row zhengwu">
+            <div class="col-md-2 col-sm-4 col-xs-6 g1">
+                <img src="img/zhengwuyun/1(1).png" class="donghua" alt=""/>
+                <p>政务云</p>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 g2">
+                <img src="img/zhengwuyun/2(1).png" class="donghua" alt=""/>
+                <p>警务云</p>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 g3">
+                <img src="img/zhengwuyun/3(1).png" class="donghua" alt=""/>
+                <p>金融云</p>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 g4">
+                <img src="img/zhengwuyun/4.png" class="donghua" alt=""/>
+                <p>教育云</p>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 g5">
+                <img src="img/zhengwuyun/5.png" class="donghua" alt=""/>
+                <p>医疗云</p>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 g6">
+                <img src="img/zhengwuyun/6.png" class="donghua" alt=""/>
+                <p>媒体云</p>
+            </div>
+        </div>
+        <!-- 江西省一类详细-->
+        <div class="jiangxi">
+            <!-- 第一行-->
+            <ul class="list-unstyled r1">
+                <li>
+                    <img src="img/jiangxi.jpg">
+                    <p>江西省</p>
+                    <div>
+                        构建省市两级政务<br>
+                        开拓政务云新心事
+                    </div>
+                </li>
+                <li>
+                    <img src="img/shandong.jpg">
+                    <p>山东省</p>
+                    <div>
+
+                        建设统一的政务云<br>
+                        打造智慧山东
+                    </div>
+                </li>
+                <li>
+                    <img src="img/beijing.jpg">
+                    <p>北京市</p>
+                    <div>
+                        构建高效政务平台，<br>
+                        促进政府职能转型
+                    </div>
+                </li>
+                <li>
+                    <img src="img/guangzhou.jpg">
+                    <p>广州市</p>
+                    <div>
+
+                        助力北京打造世界
+                        <br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/tianjin.jpg">
+                    <p>天津市</p>
+                    <div>
+
+                        打造高效可靠天津
+                        <br>
+                        政务云数据中心
+                    </div>
+                </li>
+            </ul>
+            <!-- 第二行-->
+            <ul class="list-unstyled r2">
+                <li>
+                    <img src="img/jingwuyun/1.jpg">
+                    <p>江西省公安厅</p>
+                    <div>
+                        构建世纪两级政务<br>
+                        引领地市云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jingwuyun/2.jpg">
+                    <p>徐州市公安局</p>
+                    <div>
+
+                        建设集合的政务云<br>
+                        打造能力山东
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jingwuyun/3.jpg">
+                    <p>江苏省公安厅</p>
+                    <div>
+                        构建强大政务平台<br>
+                        促进政府能力转型
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jingwuyun/4.jpg">
+                    <p>山西省公安厅</p>
+                    <div>
+
+                        助力北京创造世界
+                        <br>
+                        引领政务云新形式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jingwuyun/5.jpg">
+                    <p>吉林省公安厅</p>
+                    <div>
+
+                        打造高效烤猪天津
+                        <br>
+                        政务云数量中心
+                    </div>
+                </li>
+            </ul>
+            <!-- 第三行-->
+            <ul class="list-unstyled r3">
+                <li>
+                    <img src="img/jinrongyun/1(2).jpg">
+                    <p>政通股份</p>
+                    <div>
+                        构建省市两级政务<br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jinrongyun/2(2).jpg">
+                    <p>华泰证券</p>
+                    <div>
+
+                        建设统一的政务云<br>
+                        打造智慧山东
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jinrongyun/3(2).jpg">
+                    <p>平安银行</p>
+                    <div>
+                        构建高效政务平台<br>
+                        促进政府职能转型
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jinrongyun/4(1).jpg">
+                    <p>太平洋保险</p>
+                    <div>
+
+                        助力北京打造世界
+                        <br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jinrongyun/5(1).jpg">
+                    <p>苏州银行</p>
+                    <div>
+
+                        打造高效可靠天津
+                        <br>
+                        政务云数据中心
+                    </div>
+                </li>
+            </ul>
+            <!-- 第四行-->
+            <ul class="list-unstyled r4">
+                <li>
+                    <img src="img/jiaoyuyun/1(3).jpg">
+                    <p>教育部</p>
+                    <div>
+                        构建省市两级政务<br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jiaoyuyun/2(3).jpg">
+                    <p>中央电教馆</p>
+                    <div>
+
+                        建设统一的政务云<br>
+                        打造智慧山东
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jiaoyuyun/3(3).jpg">
+                    <p>江西省教育厅</p>
+                    <div>
+                        构建高效政务平台<br>
+                        促进政府职能转型
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jiaoyuyun/4(3).jpg">
+                    <p>北京市建筑大学</p>
+                    <div>
+
+                        助力北京打造世界
+                        <br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/jiaoyuyun/5(3).jpg">
+                    <p>复旦大学</p>
+                    <div>
+
+                        打造高效可靠天津
+                        <br>
+                        政务云数据中心
+                    </div>
+                </li>
+            </ul>
+            <!-- 第五行-->
+            <ul class="list-unstyled r5">
+                <li>
+                    <img src="img/yiliaoyun/1(4).jpg">
+                    <p>湖南省卫计委</p>
+                    <div>
+                        构建省市两级政务<br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/yiliaoyun/2(4).jpg">
+                    <p>云南省卫计委</p>
+                    <div>
+
+                        建设统一的政务云<br>
+                        打造智慧山东
+                    </div>
+                </li>
+                <li>
+                    <img src="img/yiliaoyun/3(4).jpg">
+                    <p>北京协和医院</p>
+                    <div>
+                        构建高效政务平台<br>
+                        促进政府职能转型
+                    </div>
+                </li>
+                <li>
+                    <img src="img/yiliaoyun/4(3).jpg">
+                    <p>中日友好医院</p>
+                    <div>
+
+                        助力北京打造世界
+                        <br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/yiliaoyun/5(3).jpg">
+                    <p>湘潭医院</p>
+                    <div>
+
+                        打造高效可靠天津
+                        <br>
+                        政务云数据中心
+                    </div>
+                </li>
+            </ul>
+            <!-- 第六行-->
+            <ul class="list-unstyled r6">
+                <li>
+                    <img src="img/meitiyun/1(5).jpg">
+                    <p>广电总局</p>
+                    <div>
+                        构建省市两级政务<br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/meitiyun/2(5).jpg">
+                    <p>中央电视台</p>
+                    <div>
+
+                        建设统一的政务云<br>
+                        打造智慧山东
+                    </div>
+                </li>
+                <li>
+                    <img src="img/meitiyun/3(5).jpg">
+                    <p>湖南电视台</p>
+                    <div>
+                        构建高效政务平台<br>
+                        促进政府职能转型
+                    </div>
+                </li>
+                <li>
+                    <img src="img/meitiyun/4(4).jpg">
+                    <p>贵州卫视</p>
+                    <div>
+
+                        助力北京打造世界
+                        <br>
+                        引领政务云新模式
+                    </div>
+                </li>
+                <li>
+                    <img src="img/meitiyun/5(4).jpg">
+                    <p>吉林省吉视传媒</p>
+                    <div>
+
+                        打造高效可靠天津
+                        <br>
+                        政务云数据中心
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 产品与解决方案-->
+    <div class="product">
+        <div class="product_project">
+            <div class="row">
+                <div class="col-xs-8">
+                    <p>产品与解决方案</p>
+                    <h3>聚焦IT基础设施，提供计算、存储、网络完整的系列产品，构筑安全、可靠、高效的FusionCloud云计算大数据解决方案。</h3>
+                </div>
+                <div class="col-xs-4">
+                    <img src="img/1(6).jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品与解决方案细节-->
+    <div class="product_detail">
+        <!-- 大标题-->
+        <div class="row title">
+            <div class="col-xs-6">
+                <p class="text-center pro1">产品</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="text-center fangan1">解决方案</p>
+            </div>
+        </div>
+        <!-- 第一个4块-->
+        <div class="row cx1">
+            <div class="col-xs-12">
+                <div class="row product1">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/solu1.jpg" alt=""/>
+                            <p>
+                                FusionSphere云操作系统
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <span>
+                            FusionSphere是华为公司面向多行业客户推出的，致力于帮助客户整合资源 , 让企业的云计算建设和使用更加简捷的云操作系统产品。
+
+                        </span>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                        <img src="img/solu2.jpg" alt=""/>
+                            <p>
+                                FusionInsight企业级大数据平台
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <span>
+                            华为桌面云解决方案，在保障用户数据安全的基础上，不断致力于高清界面、音视频、软件兼容性、便捷运维等各方面的创新和优化，为企业打造最佳体验、高安全和高可靠的IT办公系统。
+                        </span>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="row product1">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/pro1.jpg" alt=""/>
+                            <p>
+                                FusionStorage分布式存储系统
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <span>
+                            华为FusionStorage是为了满足云计算数据中心存储基础设施需求而设计的一种分布式块存储软件。
+                        </span>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/pro2.jpg" alt=""/>
+                            <p>
+
+                                FusionCube超融合基础设施
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <span>
+                            华为FusionCube是一款融合计算、存储、网络、虚拟化、管理能力于一体的超融合基础设施。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二个4块-->
+        <div class="row cx2">
+            <div class="col-xs-12">
+                <div class="row product1">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/solu3.jpg" alt=""/>
+                            <p>
+
+                                分布式云数据中心解决方案
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <span>
+
+											用融合架构作为资源池的基础单元，以SDN构建业务感知网络，将物理分散资源通过自动化和智能化管理，构建虚拟数据中心平台，支撑IT服务精细化运营。
+
+                        </span>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/solu4.jpg" alt=""/>
+                            <p>
+
+                                FusionCloud桌面云解决方案
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <span>
+
+											华为桌面云解决方案，在保障用户数据安全的基础上，不断致力于高清界面、音视频、软件兼容性、便捷运维等各方面的创新和优化，为企业打造最佳体验、高安全和高可靠的IT办公系统。
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="row product1">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/pro3.jpg" alt=""/>
+                            <p>
+
+
+                                业务连续性灾备解决方案
+
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <span>
+
+											基于在灾备领域的长期积累，华为致力于为客户构建从底层数据到上层应用，从单数据中心到跨多个数据中心的多层次全方位容灾解决方案，全面满足各行业的灾备系统建设要求，有效保障业务连续性。
+
+                        </span>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="zj_small">
+                            <img src="img/pro4.jpg" alt=""/>
+                            <p>
+
+
+                                ManageOne数据中心管理方案
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <span>
+
+											ManageOne是华为推出一款简化管理、敏捷运营的数据中心管理解决方案, 支持多数据中心的统一管理，提供端到端一体化管理解决方案，提升运营管理效率。
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 媒体报道-->
+    <div class="meiti">
+        <div class="meiti_project">
+            <div class="row">
+                <div class="col-xs-8">
+                    <p>媒体报道</p>
+                    <h3>
+                        关注云计算大数据深度报道，快速阅览行业动态，把握信息化发展趋势，抢占先机。
+                    </h3>
+                </div>
+                <div class="col-xs-4">
+                    <img src="img/1(7).jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lbbj">
+
+
+    <!-- 轮播1-->
+    <div class="carousel slide dibulb1 hidden-sm hidden-xs" data-ride="carousel" data-interval="2000">
+        <!--轮播内部(inner)：会随着广告滚动的-->
+        <div class="carousel-inner ">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/p1.jpg" alt=""/>
+                        <p>
+                            华为云-企业IT转型新标杆
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/p2.jpg" alt=""/>
+                        <p>
+
+                            集成交付能力是云服务商的核心竞争力
+
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/p3.jpg" alt=""/>
+                        <p>
+                            华为金融云加速数字化金融转型
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/p4.jpg" alt=""/>
+                        <p>
+
+                            云计算推动电子政务升级华为政务云助政府
+
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/p1.jpg" alt=""/>
+                        <p>
+                            华为云-企业IT转型新标杆
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/p2.jpg" alt=""/>
+                        <p>
+
+                            集成交付能力是云服务商的核心竞争力
+
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/p3.jpg" alt=""/>
+                        <p>
+                            华为金融云加速数字化金融转型
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/p4.jpg" alt=""/>
+                        <p>
+
+                            云计算推动电子政务升级华为政务云助力政府转型
+
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播2-->
+    <div class="carousel slide dibulb1 hidden-md visible-sm hidden-xs" data-ride="carousel" data-interval="2000">
+        <!--轮播内部(inner)：会随着广告滚动的-->
+        <div class="carousel-inner ">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/p1.jpg" alt=""/>
+                        <p>
+                            华为云-企业IT转型新标杆
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="img/p2.jpg" alt=""/>
+                        <p>
+
+                            集成交付能力是云服务商的核心竞争力
+
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/p3.jpg" alt=""/>
+                        <p>
+                            华为金融云加速数字化金融转型
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="img/p4.jpg" alt=""/>
+                        <p>
+                            云计算推动电子政务升级华为政务云助力政府转型
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播3-->
+    <div class="carousel slide dibulb1 hidden-sm hidden-md visible-xs" data-ride="carousel" data-interval="2000">
+        <!--轮播内部(inner)：会随着广告滚动的-->
+        <div class="carousel-inner ">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="img/p1.jpg" alt=""/>
+                        <p>
+                            华为云-企业IT转型新标杆
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="img/p2.jpg" alt=""/>
+                        <p>
+                            集成交付能力是云服务商的核心竞争力
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="img/p3.jpg" alt=""/>
+                        <p>
+                            华为金融云加速数字化金融转型
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="img/p4.jpg" alt=""/>
+                        <p>
+                            云计算推动电子政务升级华为政务云助政府
+                        </p>
+                        <h2>查看详情</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 联系我们-->
+    <div class="contact_us text-center">
+        <h3>联系我们</h3>
+        <div class="row hidden-xs">
+            <div class="col-sm-3">
+                <span>广东省深圳市龙岗区坂田华为基地</span>
+            </div>
+            <div class="col-sm-3">
+                <span>huaweiitchina@huawei.com</span>
+            </div>
+            <div class="col-sm-3">
+                <span>400-822-9999</span>
+            </div>
+            <div class="col-sm-3">
+                <span>寻找您身边的华为</span>
+            </div>
+            <div class="col-xs-12">
+                <h3>诚邀您的加入</h3>
+                <span>
+
+                    欢迎成为华为的合作伙伴，让我们互利双赢，共襄新程！<br>
+                    了解更多
+                </span>
+            </div>
+        </div>
+        <div class="row visible-xs text-center">
+            <div class="col-xs-6">
+                <img src="img/app_scan.png" alt=""/>
+            </div>
+            <div class="col-xs-6">
+                <img src="img/app_scanMB.jpg" alt=""/>
+            </div>
+            <div class="col-xs-12 ">
+                <span>版权所有©华为技术有限公司 1988-2016</span>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+    <script src="js/dashuju.js"></script>
+</body>
+</html>

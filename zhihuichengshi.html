@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智慧城市</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/zhihuichengshi.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+</head>
+<body>
+<!--导航条-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+
+        <!--导航条头部-->
+        <div class="navbar-header">
+            <a class="navbar-brand logo" href="huawei.html"></a>
+            <a data-toggle="collapse" href="#top-menu" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <!--导航条折叠部分-->
+        <div id="top-menu" class="collapse navbar-collapse">
+            <!--折叠部分中的导航-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#">菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">华为产品</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">热点话题</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">用户</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">购买</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">产品支持</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">关于华为</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--折叠部分中的表单-->
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <label class="sr-only" for="kw">搜索：</label>
+                    <input class="form-control" placeholder="搜索" id="kw">
+                </div>
+
+            </form>
+            <!-- 折叠部分的导航-->
+            <ul class="nav navbar-nav nav1">
+                <li><a href="#">我想</a></li>
+                <li><a href="#">产品与解决方案</a></li>
+                <li><a href="#">行业</a></li>
+                <li><a href="dashuju.html" target="_blank">服务</a></li>
+                <li><a href="#">合作伙伴</a></li>
+                <li><a href="#">如何购买</a></li>
+                <li><a href="#">互动社区</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<div id="ad6" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <!--轮播内部(inner)：会随着广告滚动的-->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/智慧城市-pc.png">
+
+        </div>
+        <div class="item">
+            <img src="img/gartner11.jpg">
+        </div>
+    </div>
+
+    <!--前进后退按钮不随内容滚动，不属于inner-->
+    <a data-slide="prev" href="#ad6" class="carousel-control left">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a data-slide="next" href="#ad6" class="carousel-control right">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+    <!--序号指示器不随内容滚动，不属于inner-->
+    <ul class="carousel-indicators">
+        <li data-slide-to="0" data-target="#ad6" class="active"></li>
+        <li data-slide-to="1" data-target="#ad6"></li>
+    </ul>
+    <div class="zhih hidden-xs">
+        <h1>智慧城市</h1>
+        <p>新ICT让城市更智慧</p>
+        <a href="#" class="btn btn-lg btn-danger">了解更多</a>
+    </div>
+
+
+</div>
+<!--相关产品-->
+<h1 class="text-center relate">相关产品</h1>
+<!-- 轮播1-->
+<div class="carousel slide dibulb1 hidden-sm hidden-xs" data-ride="carousel" data-interval="2000">
+    <!--轮播内部(inner)：会随着广告滚动的-->
+    <div class="carousel-inner ">
+        <div class="item active">
+            <div class="row">
+                <div class="col-md-3 dn-big">
+                    <img src="img/AR503GW-LM7%20front1.jpg" alt=""/>
+                    <p>
+                        eLTE宽带集群系统
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">宽带集群</span>
+                    </span>
+                </div>
+                <div class="col-md-3 dn-big">
+                    <img src="img/E9000_01_new_1.jpg" alt=""/>
+                    <p>
+                        eLTE宽带集群系统
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">树新标杆</span>
+                    </span>
+                </div>
+                <div class="col-md-3 dn-big">
+                    <img src="img/fusionsphere_logo_new1.jpg" alt=""/>
+                    <p>
+                        CloudEngine 12800数据中心交换机
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">数据中心</span>
+                    </span>
+                </div>
+                <div class="col-md-3 dn-big">
+                    <img src="img/集群终端1.png" alt=""/>
+                    <p>
+
+                        FusionSphere云操作系统
+
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">操作系统</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+                <div class="col-md-3 dn-big">
+                    <img src="img/AR503GW-LM7%20front1.jpg" alt=""/>
+                    <p>
+                        华为云-企业IT转型新标杆
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">宽带集群</span>
+                    </span>
+                </div>
+                <div class="col-md-3 dn-big">
+                    <img src="img/E9000_01_new_1.jpg" alt=""/>
+                    <p>
+
+                        集成交付能力是云服务商的核心竞争力
+
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">树新标杆</span>
+                    </span>
+                </div>
+                <div class="col-md-3 dn-big">
+                    <img src="img/fusionsphere_logo_new1.jpg" alt=""/>
+                    <p>
+                        华为金融云加速数字化金融转型
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">数据中心</span>
+                    </span>
+                </div>
+                <div class="col-md-3 dn-big">
+                    <img src="img/集群终端1.png" alt=""/>
+                    <p>
+                        云计算推动电子政务升级华为政务云助力
+                    </p>
+                    <h2>进入了解</h2>
+                    <span class="shadow1">
+                        <span class="sdbg"></span>
+                        <span class="title">操作系统</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 轮播2-->
+<div class="carousel slide dibulb1 hidden-md visible-sm hidden-xs" data-ride="carousel" data-interval="2000">
+    <!--轮播内部(inner)：会随着广告滚动的-->
+    <div class="carousel-inner ">
+        <div class="item active">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/AR503GW-LM7%20front1.jpg" alt=""/>
+                    <p>
+                        华为云-企业IT转型新标杆
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/E9000_01_new_1.jpg" alt=""/>
+                    <p>
+
+                        集成交付能力是云服务商的核心竞争力
+
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/fusionsphere_logo_new1.jpg" alt=""/>
+                    <p>
+                        华为金融云加速数字化金融转型
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/集群终端1.png" alt=""/>
+                    <p>
+                        云计算推动电子政务升级华为政务云助
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 轮播3-->
+<div class="carousel slide dibulb1 hidden-sm hidden-md visible-xs" data-ride="carousel" data-interval="2000">
+    <!--轮播内部(inner)：会随着广告滚动的-->
+    <div class="carousel-inner ">
+        <div class="item active">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="img/AR503GW-LM7%20front1.jpg" alt=""/>
+                    <p>
+                        华为云-企业IT转型新标杆
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="img/E9000_01_new_1.jpg" alt=""/>
+                    <p>
+                        集成交付能力是云服务商的核心竞争力
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="img/fusionsphere_logo_new1.jpg" alt=""/>
+                    <p>
+                        华为金融云加速数字化金融转型
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="img/集群终端1.png" alt=""/>
+                    <p>
+                        云计算推动电子政务升级华为政务云助政府
+                    </p>
+                    <h2>进入了解</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--智慧城市-->
+<div class="wisdomCitybg">
+
+
+<div class="wisdomCity">
+    <h2>智慧城市</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-md-push-8 col-sm-push-8 col-sm-4 col-xs-12">
+            <img src="img/新ICT-让城市更智慧.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-md-pull-4 col-sm-pull-4 col-sm-8 col-xs-12">
+            <span>信息和通信技术快速发展，改变着人们的生活，也改变着城市运行和管理的方式。现代城市充分运用新ICT手段感测、分析、整合城市运行和管理系统的各项关键信息，从而对城市治理、民生服务、商业活动在内的各种需求做出智能的响应，以数据驱动城市的发展，为人类创造更美好的城市生活。</span>
+            <p><button class="btn btn-danger">购买/咨询</button></p>
+            <p>快速定位：<a href="">下载更多资源</a> &nbsp;<a href="">渠道资料</a></p>
+        </div>
+    </div>
+</div>
+</div>
+<!--客户价值-->
+<div class="customer_value">
+    <h2 class="text-center">客户价值</h2>
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-4">
+                    <img src="img/global.png" class="img-responsive donghua2 img-circle " alt=""/>
+                </div>
+                <div class="col-sm-12 col-xs-8">
+                    <p class="text-center hidden-xs" >解决方案丰富</p>
+                    <p class="text-center hidden-xs" >丰富的行业解决方案和合作伙伴资源</p>
+                    <p class="hidden-md hidden-sm visible-xs">解决方案丰富</p>
+                    <p class="hidden-md hidden-sm visible-xs" >丰富的行业解决方案和合作伙伴资源</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="row">
+
+
+            <div class="col-sm-12 col-xs-4">
+                <img src="img/No1.png" class="img-responsive donghua2 img-circle" alt=""/>
+            </div>
+            <div class="col-sm-12 col-xs-8">
+                <p class="text-center hidden-xs">技术领先</p>
+                <p class="text-center hidden-xs">完整的产品线和全球领先的技术与开</p>
+                <p class="hidden-md hidden-sm visible-xs">技术领先</p>
+                <p class="hidden-md hidden-sm visible-xs" >完整的产品线和全球领先的技术与开</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="row">
+
+
+            <div class="col-sm-12 col-xs-4">
+                <img src="img/安全可靠1.png" class="img-responsive donghua2 img-circle" alt=""/>
+            </div>
+            <div class="col-sm-12 col-xs-8">
+                <p class="text-center hidden-xs">安全可靠</p>
+                <p class="text-center hidden-xs ">芯片和源代码级的自主知识产权</p>
+                <p class="hidden-md hidden-sm visible-xs">安全可靠</p>
+                <p class="hidden-md hidden-sm visible-xs" >芯片和源代码级的自主知识产权</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--解决方案-->
+<div class="jiejuebg">
+<div class="jiejuefangan">
+    <h2 class="text-center">解决方案</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-4">
+                    <img src="img/road1.jpg" alt="" class="img-responsive donghua2 img-circle"/>
+                </div>
+                <div class="col-sm-12 col-xs-8">
+                    <h4>智能运营中心</h4>
+                    <p>智慧城市的“大脑”与“中枢”，提供从技术到流程完整集成的、互相关
+                        联的智能化城市运营管理平台。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-4">
+                    <img src="img/pingan.jpg" alt="" class="img-responsive donghua2 img-circle"/>
+                </div>
+                <div class="col-sm-12 col-xs-8">
+                    <h4>智慧政务</h4>
+                    <p>开放共享、敏捷高效、安全可靠的政务信息化解决方案助力政府提升效率、创新公共服务、促进经济增长。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-4">
+                    <img src="img/04-05-协作.jpg" alt="" class="img-responsive donghua2 img-circle"/>
+                    </div>
+                <div class="col-sm-12 col-xs-8">
+                    <h4>平安城市</h4>
+                    <p>以融合指挥、可视调度加快应急响应，以云平台与智能分析提升执法效率，为建设和谐社会提供技术保障。</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-4">
+                    <img src="img/01-区域卫生信息化.jpg" alt="" class="img-responsive donghua2 img-circle"/>
+                </div>
+                <div class="col-sm-12 col-xs-8">
+                    <h4>智慧教育</h4>
+                    <p>通过信息技术打破世界、地点的阻隔，开启教育信息化、教育现代化之路，共同实现中国教育之梦。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--成功案例-->
+<div class="jiejuebg">
+    <div class="jiejuefangan">
+        <h2 class="text-center">成功案例</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-4">
+                        <img src="img/12.jpg" alt="" class="img-responsive donghua3"/>
+                    </div>
+                    <div class="col-sm-12 col-xs-8">
+                        <h4>华为助力龙岗打造沿海发达区域智慧城市</h4>
+                        <p>基于“端+网+库+图+云”的总体架构，建设11项重点工程，打造沿海发达区域智慧城市样板。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-4">
+                        <img src="img/dian.jpg" alt="" class="img-responsive donghua3"/>
+                    </div>
+                    <div class="col-sm-12 col-xs-8">
+                        <h4>一中心四平台 托起智慧宝安</h4>
+                        <p>以智慧宝安管理控制中心为载体，创新城区管理服务、提升市民生活质量、促进产业转型升级。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-4">
+                        <img src="img/02-06-基础网络.jpg" alt="" class="img-responsive donghua3"/>
+                    </div>
+                    <div class="col-sm-12 col-xs-8">
+                        <h4>华为政务云助力智慧鹰潭</h4>
+                        <p>依托华为公司搭建的政务云平台，建设网上办事大厅，提供一站式市民服务，提高政府工作效率。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-4">
+                        <img src="img/敏捷园区2.jpg" alt="" class="img-responsive donghua3"/>
+                    </div>
+                    <div class="col-sm-12 col-xs-8">
+                        <h4>建北京政务服务中心，为信息跑路</h4>
+                        <p>华为政务云解决方案构建统一的数据共享与业务交换平台，为行政审批和政务协同提供高效支撑</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--华为新闻-->
+<div class="news_hw">
+    <div class="huaweinews">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12 frist_news">
+                <h2>华为新闻</h2>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="img/122256.png" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-xs-10">
+                       <p>华为携手邮储银行、南天信息发布银行个人核心业务系统@KunLun联合解决方案</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="img/122547.png" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-xs-10">
+                        <p>简化气象数据生命周期管理 华为分布式存储亮相WMO技术大会</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="img/122547.png" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-xs-10">
+                        <p>神州数码与华为公司达成战略合作，强强联手打造行业云</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <h3>巴塞罗那智慧城市博览会暨2016华为智慧城市峰会</h3>
+                <img src="img/智慧城市峰会.jpg" class="img-responsive">
+                <h4>新ICT，开启智能社会美好未来<br>
+                    11月15日-17日 | 巴塞罗那·西班牙</h4>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <h3>华为在全球超算大会发布新一代高性能计算平台</h3>
+                <img src="img/sc16_800_600.jpg" class="img-responsive">
+                <h4>美国，盐湖城，盐宫会展中心<br>
+                    11月14-17日</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部联系-->
+<div class="bottom_lianxi">
+    <div class="row">
+    <!-- 4小块-->
+    <div class="col-md-8 col-sm-12 hidden-xs">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>按访问者</h3>
+                <ul class="list-unstyled">
+                    <li>个人用户</li>
+                    <li>企业用户</li>
+                    <li>运营商用户</li>
+                    <li>合作伙伴</li>
+                    <li>新闻媒体</li>
+                    <li>开发者</li>
+                    <li>供应商</li>
+                    <li>求职者</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3>关于华为</h3>
+                <ul class="list-unstyled">
+                    <li>公司简介</li>
+                    <li>公司治理</li>
+                    <li>高管信息</li>
+                    <li>债券投资</li>
+                    <li>可持续发展</li>
+                    <li>网络安全</li>
+                    <li>出版物</li>
+                    <li>公司年报</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3>新闻 & 展会</h3>
+                <ul class="list-unstyled">
+                    <li>新闻</li>
+                    <li>安全通告</li>
+                    <li>展会活动</li>
+                    <li>行业洞察</li>
+                    <li>全联接世界</li>
+                    <li>全球联接指数</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3>行业洞察</h3>
+                <ul class="list-unstyled">
+                    <li>华为商城</li>
+                    <li>荣耀官网</li>
+                    <li>华为海洋</li>
+                    <li>产品定义社区</li>
+                    <li>心声社区</li>
+                    <li>除名查询</li>
+                    <li>在线反馈</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 隐藏的部分-->
+    <div class="hidden-md hidden-sm visible-xs col-xs-12 dibu">
+            <h3>按访问者</h3>
+            <ul class="fade list-unstyled">
+                <li>个人用户</li>
+                <li>企业用户</li>
+                <li>运营商用户</li>
+                <li>合作伙伴</li>
+                <li>新闻媒体</li>
+                <li>开发者</li>
+                <li>供应商</li>
+                <li>求职者</li>
+            </ul>
+
+            <h3>关于华为</h3>
+            <ul class="fade list-unstyled">
+                <li>公司简介</li>
+                <li>公司治理</li>
+                <li>高管信息</li>
+                <li>债券投资</li>
+                <li>可持续发展</li>
+                <li>网络安全</li>
+                <li>出版物</li>
+                <li>公司年报</li>
+            </ul>
+
+            <h3>新闻 & 展会</h3>
+            <ul class="fade list-unstyled">
+                <li>新闻</li>
+                <li>安全通告</li>
+                <li>展会活动</li>
+                <li>行业洞察</li>
+                <li>全联接世界</li>
+                <li>全球联接指数</li>
+            </ul>
+
+            <h3>行业洞察</h3>
+            <ul class="fade list-unstyled">
+                <li>华为商城</li>
+                <li>荣耀官网</li>
+                <li>华为海洋</li>
+                <li>产品定义社区</li>
+                <li>心声社区</li>
+                <li>除名查询</li>
+                <li>在线反馈</li>
+            </ul>
+    </div>
+
+    <!-- 4份-->
+    <div class="col-md-4 col-xs-12 text-center hidden-xs">
+        <img src="img/pic_bcw_zi.png" alt=""/>
+        <p>
+            <img src="img/nav_sm_facebook.png" alt=""/>
+            <img src="img/nav_sm_linkin.png" alt=""/>
+            <img src="img/nav_sm_twtter.png" alt=""/>
+        </p>
+        <img src="img/qrcode-huawei-CNBG-81x81px.jpg" alt=""/>
+    </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/zhihuichengshi.js"></script>
+<script>
+    $('.dibu h3').on('click',function(){
+        $(this).next().toggleClass('in');
+    });
+</script>
+</body>
+</html>

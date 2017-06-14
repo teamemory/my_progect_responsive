@@ -1,0 +1,112 @@
+﻿// For CN
+$(function () {
+  var defaultPromptText = '请选择省份/城市';
+  $('form.cbg-store-selector').each(function () {
+    // Province/city/county list
+    var $provinceSelect = $(this).find('select[name=proid]');
+    var $citiesSelect = $(this).find('select[name=areaid]');
+    var $countiesSelect = $(this).find('select[name=countyid]');
+    try {
+      $provinceSelect.attr('data-default-text', $provinceSelect.get(0).options[0].text);
+      $citiesSelect.attr('data-default-text', $citiesSelect.get(0).options[0].text);
+      $countiesSelect.attr('data-default-text', $countiesSelect.get(0).options[0].text);
+    }
+    catch (e) { }
+    // Scope
+    var scope = $(this).data('scope') || 'network';
+    var siteCode = $(this).data('sitecode') || 'cn';
+    // Selectbox
+    $(this).find('select').selectbox({
+      effect: 'slide'
+    });
+    $('form.cbg-store-selector').on('submit', function (e) {
+      if ($provinceSelect.val() == '') {
+        alert($provinceSelect.data('prompt-text') || defaultPromptText);
+        e.preventDefault();
+        return false;
+      }
+      if ($citiesSelect.val() == '') {
+        alert($citiesSelect.data('prompt-text') || defaultPromptText);
+        e.preventDefault();
+        return false;
+      }
+      // Tracking
+      try { $.multitrack.trackEvent(cbgtracking.defaultEventCategory, 'store-form', 'submit'); } catch (e) { }
+      return true;
+    });
+    // Convert json data to select options array.
+    function dataToOptions(data, promptOption) {
+      var options = new Array();
+      if (data.length > 1) {
+        options.push(promptOption);
+      }
+      for (var i = 0; i < data.length; i++) {
+        options.push(new Option(data[i].placeName, data[i].placeId));
+      }
+      return options;
+    }
+    // Replace the options of a select element
+    function replaceOptions($select, options) {
+      while ($select.get(0).options.length > 0) {
+        $select.get(0).options.remove(0);
+      }
+      for (var i = 0; i < options.length; i++) {
+        $select.get(0).options.add(options[i]);
+      }
+      // Force selectbox plugin to refresh the options.
+      $select.selectbox('detach').selectbox('attach');
+    }
+    // Provinces
+    $provinceSelect.on('change', function () {
+      $.ajax({
+        type: 'GET',
+        url: 'http://consumer.huawei.com/support/services/base/place/list',
+        dataType: 'jsonp',
+        jsonp: 'jsonp',
+        data: {
+          siteCode: siteCode,
+          serviceType: scope,
+          placeId: $(this).val()
+        },
+        success: function (data) {
+          replaceOptions($citiesSelect, dataToOptions(data, new Option($citiesSelect.data('default-text') || '选择城市', '')));
+          replaceOptions($countiesSelect, new Array(new Option($countiesSelect.data('default-text') || '可选项：选择区（县）', '')));
+          if (data.length == 1) {
+            $citiesSelect.trigger('change');
+          }
+        }
+      });
+    });
+    // Cities/counties
+    $citiesSelect.on('change', function () {
+      $.ajax({
+        type: 'GET',
+        url: 'http://consumer.huawei.com/support/services/base/place/list',
+        dataType: 'jsonp',
+        jsonp: 'jsonp',
+        data: {
+          siteCode: siteCode,
+          serviceType: scope,
+          placeId: $(this).val()
+        },
+        success: function (data) {
+          replaceOptions($countiesSelect, dataToOptions(data, new Option($countiesSelect.data('default-text') || '可选项：选择区（县）', '')));
+        }
+      });
+    });
+    // Get provinces list
+    $.ajax({
+      type: 'GET',
+      url: 'http://consumer.huawei.com/support/services/base/place/country/site',
+      dataType: 'jsonp',
+      jsonp: 'jsonp',
+      data: {
+        siteCode: siteCode,
+        serviceType: scope
+      },
+      success: function (data) {
+        replaceOptions($provinceSelect, dataToOptions(data, new Option($provinceSelect.data('default-text') || '选择省份', '')));
+      }
+    });
+  }); // each
+});

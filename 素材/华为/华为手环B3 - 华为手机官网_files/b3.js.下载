@@ -1,0 +1,293 @@
+var wid_h, body_t, doch = $("body").height() - $("#cbg-footer-nav").height() - $("#cbg-footer-links").height();
+var winth = $('body').winth;
+$(function () {
+    wid_h = $(window).height();
+    body_t = $("body").offset().top;
+    window.onload = function () {
+        //页面加载左侧导航栏显示样式开始
+        var anhor = window.location.hash;//得到url的锚链接
+        if (anhor != '') {
+            anhor = anhor.substr(1, anhor.length);
+            $("." + anhor).parent().addClass("select").siblings().removeClass("select");
+            var initTop = $("#" + anhor).offset().top;
+            $("html,body").stop().animate({scrollTop: initTop}, 1000, function () {
+
+                $(".sidebar").css({
+                    position: 'fixed',
+                    top: 14 + "%"
+                });
+
+                body_h = $(document).scrollTop();
+                if ((doch - body_h) < ($(".sidebar").height() + 100)) {
+
+                    $(".sidebar").css({
+                        position: 'absolute',
+                        top: "auto",
+                        "bottom": "20px"
+                    });
+                }
+            });
+
+        }
+        init();
+    }
+    $(window).resize(function () {
+        init();
+        width = $("body").width();
+    });
+    if ($("html").hasClass("normal")) {
+        animate1();
+    } else {
+        animate2();
+
+    }
+    $(".sidebar a").click(function () {
+//        $(this).parent().addClass("select").siblings().removeClass("select");
+//        $(this).parent("")
+        var hr = $(this).data("href");
+        var anh = $(hr).offset().top - 48 + "px";
+        $("html,body").stop().animate({scrollTop: anh}, 1000, function () {
+            $(".sidebar").css({
+                position: 'fixed',
+                top: 14 + "%"
+            });
+        });
+    });
+
+});
+//大于ie9
+function animate1() {
+    $(window).scroll(function () {
+        body_t = $(document).scrollTop();
+        var body_b = body_t + wid_h;
+//        if ($("html,body").is(":animated")) {
+//            return;
+//        }
+        var curTop = $(this).scrollTop();
+//        alert(curTop);
+        var maxLength = $("#banner").height();
+        var mLength = $("#banner").height();
+//        alert(maxLength);
+        var topArray = [];
+
+
+        $(".sidebar").find("a").each(function () {
+            topArray.push($(this).data("href"));
+//            console.log($(this).data("href"));
+        });
+        if (curTop > maxLength) {
+            $(".sidebar").css({
+                position: 'fixed',
+                top: 14 + "%",
+                "bottom": "auto"
+            });
+        } else {
+            $(".sidebar").css({
+                position: 'absolute',
+                top: 2 + "%",
+                "bottom": "auto"
+            });
+        }
+
+        if ((doch - body_t) < ($(".sidebar").height() + 100)) {
+            $(".sidebar").css({
+                position: 'absolute',
+                top: "auto",
+                "bottom": "40px"
+            });
+        }
+
+
+        for (var i = 0; i < topArray.length; i++) {
+            var div_b = $(topArray[i]).offset().top + ($("#banner").height() / 2);
+//            $(topArray[i]).offset().top >= curTop && ($(topArray[i + 1]).offset().top - curTop) < (maxLength * 2)
+            if (i < topArray.length - 1) {
+                if ($(topArray[i]).offset().top >= curTop && ($(topArray[i + 1]).offset().top - curTop) < (maxLength * 2)) {
+                    $(".sidebar li:eq(" + i + ")").addClass("select").siblings("li").removeClass('select');
+                }
+                if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+                    $(".gemini_bracelet:eq(" + i + ")").addClass("active");
+                } else {
+                    $(".gemini_bracelet:eq(" + i + ")").removeClass("active");
+                }
+            } else {
+                if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+                    $(".sidebar li:eq(" + i + ")").addClass("select").siblings("li").removeClass('select');
+                }
+                if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+                    $(".gemini_bracelet:eq(" + i + ")").addClass("active");
+                } else {
+                    $(".gemini_bracelet:eq(" + i + ")").removeClass("active");
+                }
+            }
+        }
+
+
+    });
+}
+//小于等于ie9
+function animate2() {
+    $(window).scroll(function () {
+        body_t = $(document).scrollTop();
+        var body_b = body_t + wid_h;
+//        if ($("html,body").is(":animated")) {
+//            return;
+//        }
+        var curTop = $(this).scrollTop();
+//        alert(curTop);
+        var maxLength = $("#banner").height();
+//        alert(maxLength);
+        var topArray = [];
+
+
+        $(".sidebar").find("a").each(function () {
+            topArray.push($(this).data("href"));
+//            console.log($(this).data("href"));
+        });
+        if (curTop > maxLength) {
+            $(".sidebar").css({
+                position: 'fixed',
+                top: 14 + "%",
+                "bottom": "auto"
+            });
+        } else {
+            $(".sidebar").css({
+                position: 'absolute',
+                top: 2 + "%",
+                "bottom": "auto"
+            });
+        }
+
+        if ((doch - body_t) < ($(".sidebar").height() + 100)) {
+            $(".sidebar").css({
+                position: 'absolute',
+                top: "auto",
+                "bottom": "40px"
+            });
+        }
+        for (var i = 0; i < topArray.length; i++) {
+            var div_b = $(topArray[i]).offset().top + ($("#banner").height() / 2);
+//            $(topArray[i]).offset().top >= curTop && ($(topArray[i + 1]).offset().top - curTop) < (maxLength * 2)
+            if (i < topArray.length - 1) {
+                if ($(topArray[i]).offset().top >= curTop && ($(topArray[i + 1]).offset().top - curTop) < (maxLength * 2)) {
+                    $(".sidebar li:eq(" + i + ")").addClass("select").siblings("li").removeClass('select');
+                }
+                if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+                    $(".gemini_bracelet:eq(" + i + ")").addClass("active");
+                    var obj = $(".ie9 .gemini_bracelet:eq(" + i + ")");
+                    imgAnimate(obj.find(".animate3"), true);
+                    imgAnimate(obj.find(".animate2"), true);
+                    imgAnimate(obj.find(".animate1"), true);
+                    imgAnimate(obj.find(".animate"), true);
+                } else {
+                    $(".gemini_bracelet:eq(" + i + ")").removeClass("active");
+                    var obj = $(".ie9 .gemini_bracelet:eq(" + i + ")");
+                    imgAnimate(obj.find(".animate3"), false);
+                    imgAnimate(obj.find(".animate2"), false);
+                    imgAnimate(obj.find(".animate1"), false);
+                    imgAnimate(obj.find(".animate"), false);
+                }
+            } else {
+                if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+                    $(".sidebar li:eq(" + i + ")").addClass("select").siblings("li").removeClass('select');
+                }
+                if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+                    $(".gemini_bracelet:eq(" + i + ")").addClass("active");
+                    var obj = $(".ie9 .gemini_bracelet:eq(" + i + ")");
+                    imgAnimate(obj.find(".animate3"), true);
+                    imgAnimate(obj.find(".animate2"), true);
+                    imgAnimate(obj.find(".animate1"), true);
+                    imgAnimate(obj.find(".animate"), true);
+                } else {
+                    $(".gemini_bracelet:eq(" + i + ")").removeClass("active");
+                    var obj = $(".ie9 .gemini_bracelet:eq(" + i + ")");
+                    imgAnimate(obj.find(".animate3"), false);
+                    imgAnimate(obj.find(".animate2"), false);
+                    imgAnimate(obj.find(".animate1"), false);
+                    imgAnimate(obj.find(".animate"), false);
+
+                }
+            }
+        }
+
+
+    });
+}
+function imgAnimate(img, StartOrEnd) {
+//    StartOrEnd :: true -> 从开始到结束 ，false -> 从结束到开始
+    var weiyi = StartOrEnd ? img.data("end") : img.data("start");
+    var weiyi2 = StartOrEnd ? img.data("start") : img.data("end");
+//    if (width < 1025) {
+//        var weiyi = StartOrEnd ? img.data("endi9") : img.data("starti9");
+//        var weiyi2 = StartOrEnd ? img.data("starti9") : img.data("endi9");
+//    } 
+
+    var opacity = StartOrEnd ? 1 : 0;
+    var opacity2 = StartOrEnd ? 0 : 1;
+//    console.log(weiyi + "," + img.data("dir"))
+//    console.log(img.css("left"));
+    if ($.trim(img.data("dir")) == "left") {
+        if (img.is(":animated")) {
+            img.stop();
+//            img.css({"left": weiyi2, "opacity": opacity2})
+        }
+
+        img.animate({"left": weiyi, "opacity": opacity}, 1000);
+    }
+    if ($.trim(img.data("dir")) == "top") {
+        if (img.is(":animated")) {
+            img.stop();
+//            img.css({"top": weiyi2, "opacity": opacity2})
+        }
+        img.animate({"top": weiyi, "opacity": opacity}, 1000);
+
+    }
+    if ($.trim(img.data("dir")) == "right") {
+        if (img.is(":animated")) {
+            img.stop();
+//            img.css({"left": weiyi2, "opacity": opacity2})
+        }
+
+        img.animate({"right": weiyi, "opacity": opacity}, 1000);
+    }
+    if ($.trim(img.data("dir")) == "opacity") {
+        if (img.is(":animated")) {
+            img.stop();
+//            img.css({"left": weiyi2, "opacity": opacity2})
+        }
+        img.animate({"opacity": opacity}, 1000);
+    }
+
+
+}
+function init() {
+    var topArray = [];
+    var curTop = $(this).scrollTop();
+    var maxLength = $("#banner").height();
+    $(".sidebar").find("a").each(function () {
+        topArray.push($(this).data("href"));
+//            console.log($(this).data("href"));
+    });
+    doch = $("body").height() - $("#cbg-footer-nav").height() - $("#cbg-footer-links").height();
+    for (var i = 0; i < topArray.length; i++) {
+        var div_b = $(topArray[i]).offset().top + ($("#banner").height() / 2);
+        if (div_b < ($(document).scrollTop() + $(window).height()) && div_b > ($(document).scrollTop())) {
+            $(".gemini_bracelet:eq(" + i + ")").addClass("active");
+            var obj = $(".ie9 .gemini_bracelet:eq(" + i + ")");
+            imgAnimate(obj.find(".animate3"), true);
+            imgAnimate(obj.find(".animate2"), true);
+            imgAnimate(obj.find(".animate1"), true);
+            imgAnimate(obj.find(".animate1"), true);
+        } else {
+            $(".gemini_bracelet:eq(" + i + ")").removeClass("active");
+            var obj = $(".ie9 .gemini_bracelet:eq(" + i + ")");
+            imgAnimate(obj.find(".animate3"), false);
+            imgAnimate(obj.find(".animate2"), false);
+            imgAnimate(obj.find(".animate1"), false);
+            imgAnimate(obj.find(".animate"), false);
+        }
+
+    }
+}
+
+

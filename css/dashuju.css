@@ -1,0 +1,221 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, "SimHei", Arial, sans-serif;
+    margin-top: 50px;
+    background: black;
+    color: #fff;
+    position: relative;
+}
+.logo {
+    display: inline-block;
+    width: 166px;
+    height: 42px;
+    background: url("../img/logo.png") 0 0 no-repeat;
+    margin-top: 4px;  /*Bootstrap不知道图片高度，需要手工调整*/
+}
+.nav1{
+    margin: 0 20px;
+}
+
+/*选择华为处设置宽度*/
+@media screen and (min-width: 1200px){
+    .why{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+/*为什么选择华为浮动*/
+
+.why img{
+    width: 100%;
+}
+.why .choice{
+    margin:3% 0;
+    font-size: 2.5em;
+}
+.why .choice_little{
+    font-size: 1.8em;
+}
+
+/*行业云与大数据*/
+/*.industry{*/
+    /*background: #49c7bf;*/
+    /*min-height: 100px;*/
+/*}*/
+/*产品与解决方案*/
+.product{
+    background: #5276E8;
+}
+.industry{
+    background:#49C7BF;
+}
+.product_project,.industry_project,.meiti_project{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.product_project p,.industry_project p,.meiti_project p{
+    font-size: 3em;
+}
+.product_project .col-xs-8,.industry_project .col-xs-8,.meiti_project .col-xs-8{
+   margin: 5% 0;
+}
+.product_detail{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product_detail .title p{
+    background: #C0C0C0;
+    height: 45px;
+    line-height:45px;
+}
+.product1 img{
+    width: 100%;
+}
+.product1 span{
+    display: inline-block;
+    /*margin: 8% 0;*/
+    font-size: 1.3em;
+}
+.zj_small{
+    position: relative;
+}
+.zj_small p{
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+
+}
+@media screen and (max-width: 762px){
+    .zj_small p{
+        position: absolute;
+        bottom: 5%;
+        left: 26%;
+        font-size: 1.5em;
+    }
+}
+
+.title p.pro1{
+    background: #3D56A6;
+}
+/*.product_detail .title p{*/
+    /*background: #fff;*/
+/*}*/
+.cx2{
+    display: none;
+}
+/*产品和解决方案之间无间距*/
+.product_detail .title .col-xs-6{
+    padding: 0;
+}
+/* 行业云与大数据下面内容*/
+.industry_detail{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*手写江西省处的响应式*/
+.jiangxi{
+    min-height: 100px;
+    overflow: hidden;
+}
+.jiangxi ul{
+    overflow: hidden;
+}
+.jiangxi .list-unstyled li{
+    float: left;
+    width: 20%;
+}
+.jiangxi .list-unstyled li img{
+    width: 100%;
+}
+.jiangxi .list-unstyled li p{
+    text-align: center;
+    background: #EEFFFE;
+    color: black;
+    margin-top: -1px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+.jiangxi .list-unstyled li:first-child div{
+    background: #C1340E;
+}
+.jiangxi .list-unstyled li:nth-child(2) div{
+    background: #0EC1B6;
+}
+.jiangxi .list-unstyled li:nth-child(3) div{
+    background: #3C61D8;
+}
+.jiangxi .list-unstyled li:nth-child(4) div{
+    background: #18AACF;
+}
+.jiangxi .list-unstyled li:last-child div{
+    background: #CFD613;
+}
+.jiangxi .list-unstyled li div{
+    padding-left: 7%;
+    font-size: 15px;
+    height: 12%;
+}
+
+/*政务云*/
+.industry_detail .zhengwu img{
+    width: 50%;
+    margin-left: 25%;
+    /*border-right: 1px solid #dddddd;*/
+}
+.zhengwu{
+    background: #FFFFFF;
+}
+.zhengwu div{
+    border-right: 1px solid #dddddd;
+}
+.industry_detail .zhengwu p{
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.r2,.r3,.r4,.r5,.r6{
+    display: none;
+}
+
+/*媒体报道*/
+.meiti{
+    background: #4EAE42;
+    margin-top: 1%;
+}
+
+/*底部轮播*/
+.lbbj{
+    background: #fff;
+    padding: 4% 0;
+}
+.dibulb1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.dibulb1 p,.dibulb1 h2{
+    text-align: center;
+}
+.dibulb1 p{
+    background: #EEFFF1;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+}
+.dibulb1 h2{
+    background: #4EAE41;
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    padding: 5px 0;
+
+}
+/*联系我们*/
+.contact_us{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}

@@ -1,0 +1,235 @@
+@CHARSET "utf-8";
+
+body{ overflow: auto; background:#000; }
+.hide{display: none;}
+.show{display: block;}
+.opt0{opacity: 0;}
+.opt100{opacity: 100;}
+.full{width: 100%;height: 100%;left: 0;top: 0;}
+.full2{width: 100%;height: 100%;left: 0;bottom: 0;}
+.threeD{-webkit-perspective: 800;-webkit-perspective-origin: 50% 50%;-webkit-transform-style: preserve-3d;}
+.fl {float:left;}
+.fr {float:right;}
+.jwlogo{display: none;}
+.geniimg img{ width:100%; border: 0; padding: 0; margin: 0; display: block;}
+.fz{ font-size: 0;}
+.fz20{font-size: 1em;};
+.fz17{font-size: 0.85rem;}
+.fz14{font-size: 0.7rem;}
+.pt14{padding-top: 14%;}
+.pt9{padding-top: 9%;}
+.lh165{line-height: 1.65rem;}
+.fb{font-weight: bold;}
+.posRelative{ position: relative;}
+/*导航*/
+.sidebar_gemini{position: relative;}
+.sidebar{position: absolute;left: 5%;top: 2%;text-align: right;width: 75px;;height: 450px;z-index: 100;}
+.sidebar ul{height: 100%;background: url(../images/ul_bg2.png) no-repeat right;}
+.sidebar li{width: 38px;height: 53.8px;display: block;text-align: right;position: relative;}
+.sidebar li a{width: 47px;height: 15px;display: block;}
+.sidebar li .a{background: url(../images/7_1.png) no-repeat right center;padding-top: 6px;}
+.sidebar li.select .a{background: url(../images/7_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .b{background: url(../images/9_1.png) no-repeat right center;padding-top: 6px;}
+.sidebar li.select .b{background: url(../images/9_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .c{background: url(../images/10_1.png) no-repeat right center;padding-top: 6px;}
+.sidebar li.select .c{background: url(../images/10_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .d{background: url(../images/12_1.png) no-repeat right center;padding-top: 6px;}
+.sidebar li.select .d{background: url(../images/12_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .e{background: url(../images/15_1.png) no-repeat right center;padding-top: 4px;}
+.sidebar li.select .e{background: url(../images/15_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .f{background: url(../images/17_1.png) no-repeat right center;padding-top: 3px;}
+.sidebar li.select .f{background: url(../images/17_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .g{background: url(../images/19_1.png) no-repeat right center;padding-top: 2px;}
+.sidebar li.select .g{background: url(../images/19_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .h{background: url(../images/21_1.png) no-repeat right center;padding-top: 2px;}
+.sidebar li.select .h{background: url(../images/21_2.png) no-repeat right center;padding-top: 6px;}
+.sidebar li .i{background: url(../images/24_1.png) no-repeat right center;padding-top: 0px;}
+.sidebar li.select .i{background: url(../images/24_2.png) no-repeat right center;padding-top: 6px;}
+/*banner*/
+#wrap{ min-width: 1024px;} 
+.banner{width: 100%;}
+/*手环一*/
+.gemini_bracelet1{width: 100%; position: relative;}
+.gemini_bracelet1 .seven{ width: 8.9%; position: absolute; right:66.3%; top: 43.4%;opacity: 0;-webkit-transition:all 1s ease-in 0s;-moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.gemini_bracelet1.active .seven,.ie8 .gemini_bracelet1 .seven{right:63.3%;opacity:1;}
+.gemini_bracelet1 .watch01{ width: 10.36%; height: 36.89%; position: absolute; left: 44.69%; top: 32.03%;opacity: 0;-moz-transform:rotate(40deg);-moz-transition:all 1s ease-in 0s ;-o-transform:rotate(40deg);-o-transition:all 1s ease-in 0s ;-ms-transform:rotate(40deg);-ms-transition:all 1s ease-in 0s ; -webkit-transform:rotate(40deg);-webkit-transition:all 1s ease-in 0s ;transform:rotate(40deg);transition:all 1s ease-in 0s ;}
+.ie9 .gemini_bracelet1 .watch01{ width: 10.36%; height: 36.89%; position: absolute; left: 44.69%; top: 29.03%;opacity: 0;-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+.gemini_bracelet1.active .watch01{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform:rotate(0deg);opacity:1;}
+.gemini_bracelet1 .seven_textbg{ width: 20.68%;position: absolute; left: 61%; top: 24.73%; opacity: 0; -webkit-transition:all 1s ease-in 0s;-moz-transition:all 1s ease-in 0s; -o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.gemini_bracelet1.active .seven_textbg{top: 26.73%;opacity: 1;}
+.ie9 .gemini_bracelet1 .seven_textbg{opacity: 0;top: 26.73%};
+.ie8 .gemini_bracelet1 .seven_textbg{ top: 26.73%; opacity:1;}
+.gemini_bracelet1 .seven_text{ width: 18.07%;position: absolute; left: 60.5%; top: 30.12%; opacity: 0; -webkit-transition:all 1s ease-in 0.3s;-moz-transition:all 1s ease-in 0.3s; -o-transition:all 1s ease-in 0.3s;-ms-transition:all 1s ease-in 0.3s;transition:all 1s ease-in 0.3s;font-family: "微软雅黑";color: #fff;  line-height: 1.5rem; }
+.gemini_bracelet1.active .seven_text,.ie8 .gemini_bracelet1 .seven_text{ left:62.5%; opacity:1;  }
+
+/*手环二*/ 
+.gemini_bracelet2{ width: 100%; position: relative;}
+.gemini_bracelet2 .watch02{ width: 13.03%; height: 40.68%; position: absolute; left: 43.59%; top: 28.24%; display: block;opacity: 0;-moz-transform:rotate(-40deg);-moz-transition:all 1s ease-in 0s; -o-transform:rotate(-40deg);-o-transition:all 1s ease-in 0s ;-ms-transform:rotate(-40deg);-ms-transition:all 1s ease-in 0s ;-webkit-transform:rotate(-40deg);-webkit-transition:all 1s ease-in 0s ;transform:rotate(-40deg);transition:all 1s ease-in 0s ;}
+.ie9 .gemini_bracelet2 .watch02{ width: 13.03%; height: 40.68%; position: absolute; left: 43.59%; top: 31.24%; display: block;opacity: 0;-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+.gemini_bracelet2.active .watch02,.ie8 .gemini_bracelet2 .watch02{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform:rotate(0deg);opacity:1;}
+.gemini_bracelet2 .nine{ width: 8.9%;position: absolute; right: 66.3%; top: 41.92%;display: block;opacity: 0;-webkit-transition:all 1s ease-in 0s;-moz-transition:all 1s ease-in 0s; -o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.gemini_bracelet2.active .nine,.ie8 .gemini_bracelet2 .nine{opacity: 1;right: 63.3%;}
+.gemini_bracelet2 .nine_textbg{ width: 20.625%;position: absolute; left: 61%; top: 34.08%; display: block;opacity: 0;-webkit-transition:all 1s ease-in 0s;-moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.ie9 .gemini_bracelet2 .nine_textbg{opacity: 0;}
+.gemini_bracelet2.active .nine_textbg,.ie8 .gemini_bracelet2 .nine_textbg{opacity: 1; top: 32.08%;}
+.gemini_bracelet2 .nine_text{ width: 18.13%;position: absolute; left: 62.5%;  top: 30.68%; display: block;opacity: 0;-webkit-transition:all 1s ease-in 0.3s;-moz-transition:all 1s ease-in 0.3s;-o-transition:all 1s ease-in 0.3s;-ms-transition:all 1s ease-in 0.3s;transition:all 1s ease-in 0.3s;}
+.ie9 .gemini_bracelet2 .nine_text{ width: 18.13%;position: absolute; left: 62.5%;  top: 34.5%; display: block;opacity: 0;}
+.gemini_bracelet2.active .nine_text,.ie8 .gemini_bracelet2.active .nine_text{ opacity: 1; top: 34.68%;}
+/*手环三*/
+.gemini_bracelet3{ width: 100%; position: relative;}
+.gemini_bracelet3 .ten{ width: 10.78%;position: absolute; right: 63.3%; top: 37.27%;display: block;opacity: 0;-webkit-transition:all 1s ease-in 0s;-moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.gemini_bracelet3.active .ten,.ie8 .gemini_bracelet3 .ten{opacity: 1;top: 39.38%;}
+.gemini_bracelet3 .watch03{ width: 18.13%;position: absolute; left: 40.8%; top: 41.73%; display: block;opacity: 0;-webkit-transition:all 1s ease-in 0s; -moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.ie9 .gemini_bracelet3 .watch03{ width: 18.13%;position: absolute; left: 42.8%; top: 41.73%; display: block;opacity: 0;}
+.gemini_bracelet3.active .watch03,.ie8 .gemini_bracelet3 .watch03{top:39.73%;opacity:1;}
+.gemini_bracelet3 .ten_textbg{ width: 20.625%;position: absolute; left: 61%; top: 30.5%; display: block;opacity: 0;-webkit-transition:all 1s ease-in 0s; -moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.gemini_bracelet3.active .ten_textbg,.ie8 .gemini_bracelet3 .ten_textbg{opacity: 1; top: 32.5%;}
+.gemini_bracelet3 .ten_text{ width: 17.29%;position: absolute; left: 62.5%; top: 32.92%; display: block;opacity: 0;-webkit-transition:all 1s ease-in 0.5s; -moz-transition:all 1s ease-in 0.5s;-o-transition:all 1s ease-in 0.5s;-ms-transition:all 1s ease-in 0.5s;transition:all 1s ease-in 0.5s;}
+.ie9 .gemini_bracelet3 .ten_text{ width: 17.29%;position: absolute; left: 60.5%; top: 32.92%; display: block;opacity: 0;}
+.gemini_bracelet3.active .ten_text,.ie8 .gemini_bracelet3 .ten_text{opacity: 1; top: 35.92%;}
+/*手环四*/
+.gemini_bracelet4{ width: 100%; position: relative;}
+.gemini_bracelet4 .watch04{ width: 11.1%;  position: absolute; left: 47.74%; top: 29.86%; opacity: 0; display: block;-webkit-transition:all 1s ease-in;
+-moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet4.active .watch04,.ie8 .gemini_bracelet4 .watch04{left: 44.74%; opacity: 1; }
+.gemini_bracelet4 .twelve{ width: 7.66%;position: absolute; right: 63.3%; top: 42.8%;opacity: 0;-webkit-transition:all 1s ease-in 0s;
+-moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.gemini_bracelet4.active .twelve,.ie8 .gemini_bracelet4 .twelve{opacity: 1;top: 40.05%;}
+.gemini_bracelet4 .twelve_textbg{ width: 20.625%;position: absolute; left: 61%; top: 32.14%; display: block;opacity: 0;-webkit-transition:all 1s ease-in 0s; -moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+.ie9 .gemini_bracelet4 .twelve_textbg{ width: 20.625%;position: absolute; left: 61%; top: 36.1%; display: block;opacity: 0;}
+.gemini_bracelet4.active .twelve_textbg,.ie8 .gemini_bracelet3 .twelve_textbg{opacity: 1;  top: 36.1%;}
+.gemini_bracelet4 .twelve_text{ width: 17.76%;position: absolute; left: 64.5%; top: 39.86%;opacity: 0;-webkit-transition:all 1s ease-in 0.2s; -moz-transition:all 1s ease-in 0.2s;-o-transition:all 1s ease-in 0.2s;-ms-transition:all 1s ease-in 0.2s;transition:all 1s ease-in 0.2s;}
+.gemini_bracelet4.active .twelve_text,.ie8 .gemini_bracelet4 .twelve_text{opacity: 1; left: 62.5%;}
+/*手环五*/
+.gemini_bracelet5{ width: 100%; position: relative;}
+.gemini_bracelet5 .time{ width:7.7%;  position: absolute; right: 63.3%; top: 44.27%; opacity: 0; -webkit-transition:all 1s ease-in-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet5.active .time,.ie8 .gemini_bracelet5 .time{ top: 41.27%; opacity: 1; }
+.gemini_bracelet5 .watch05{ width: 12.03%;  position: absolute; left: 43.91%; top: 28.3%; opacity: 0; display: block;-webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet5 .watch05{ width: 12.03%;  position: absolute; left: 40.91%; top: 32.3%; opacity: 0;}
+.gemini_bracelet5.active .watch05,.ie8 .gemini_bracelet5 .watch05{top: 32.3%; opacity: 1; }
+.gemini_bracelet5 .text_bg{ width:20.26%; position: absolute; left:61%; top: 34.3%; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet5.active .text_bg,.ie8 .gemini_bracelet5 .text_bg{ opacity: 1;}
+.gemini_bracelet5 .text{ width:17.5%; position: absolute; left:62.5%; top: 36.3%; opacity: 0; -webkit-transition:all 1s ease-in 0.2s; -moz-transition:all 1s ease-in 0.2s; -o-transition:all 1s ease-in 0.2s; -ms-transition:all 1s ease-in 0.2s;transition:all 1s ease-in 0.2s;}
+.ie9 .gemini_bracelet5 .text{ width:17.5%; position: absolute; left:64.5%; top: 38.3%; opacity: 0; }
+.gemini_bracelet5.active .text,.ie8 .gemini_bracelet5 .text{ top: 38.3%; opacity: 1;}
+/*手环六*/
+.gemini_bracelet6{ width: 100%; position: relative;}
+.gemini_bracelet6 .time{ width:8.9%;  position: absolute; right: 66.3%; top: 40.24%; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet6.active .time{right: 63.3%; opacity: 1;}
+.ie8 .gemini_bracelet6 .time{ right: 63.3%; opacity: 1;}
+.gemini_bracelet6 .watch06{ width: 5.42%;  position: absolute; left: 47.14%; top: 30.84%; display: block; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet6 .watch06{ width: 5.42%;  position: absolute; left: 47.14%; top: 30.84%; display: block; opacity: 0; }
+.gemini_bracelet6.active .watch06,.ie8 .gemini_bracelet6 .watch06{ left: 47.14%; top: 27.84%; opacity: 1;}
+.gemini_bracelet6 .text_bg{ width:20.625%;  position: absolute; left: 61%; top: 31%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet6.active .text_bg,.ie8 .gemini_bracelet6 .text_bg{ top: 33%; opacity: 1;}
+.gemini_bracelet6 .text{ width:18.07%;  position: absolute; left:62.5%; top: 39.46%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet6 .text{ width:18.07%;  position: absolute; left:64.5%; top: 39.6%; opacity:0;}
+.gemini_bracelet6.active .text{opacity: 1;top: 37.46%;}
+/*手环七*/
+.gemini_bracelet7{ width: 100%; position: relative;}
+.gemini_bracelet7 .time{ width:7.8%;  position: absolute; right: 66.3%; top: 40.05%; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet7.active .time{ right: 63.3%; opacity: 1; }
+.ie8 .gemini_bracelet7 .time{ right: 63.3%; opacity: 1; }
+.gemini_bracelet7 .watch07{ width: 10.26%;  position: absolute; left: 47.79%; top: 32.89%; display: block; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet7 .watch07{ width: 10.26%;  position: absolute; left: 44.79%; top: 30.89%; display: block; opacity: 0; }
+.gemini_bracelet7.active .watch07,.ie8 .gemini_bracelet7 .watch07{ left: 44.79%; opacity: 1;}
+.gemini_bracelet7 .text_bg{ width:20.625%;  position: absolute; right:16.3%; top:27.68%; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet7 .text_bg{ width:20.625%;  position: absolute; left: 61%;; top:27.68%; opacity: 0;}
+.gemini_bracelet7.active .text_bg{ left: 61%;; opacity: 1;}
+.ie8 .gemini_bracelet7 .text_bg{ left: 61%; opacity: 1;}
+.gemini_bracelet7 .text{ width:18.07%; position: absolute; left:62.5%; top:30.27%; opacity: 0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet7 .text{ width:18.07%; position: absolute; left:64.5%; top:30.27%; opacity: 0; }
+.gemini_bracelet7.active .text,.ie8 .gemini_bracelet7 .text{ top:32.27%; opacity: 1;}
+
+/*手环八*/
+.gemini_bracelet8{ width: 100%; position: relative;}
+.gemini_bracelet8 .time{ width:8.65%;  position: absolute; right: 66.3%; top: 43.76%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet8.active .time,.ie8 .gemini_bracelet8 .time{right: 63.3%; opacity:1;}
+.gemini_bracelet8 .watch08{ width: 10.83%;  position: absolute; left: 43.69%; top:22.16%; opacity:0; display: block; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet8 .watch08{ width: 10.83%;  position: absolute; left: 44.69%; top:27.16%; opacity:0; }
+.gemini_bracelet8.active .watch08,.ie8 .gemini_bracelet8 .watch08{ left: 44.69%; top: 25.16%; opacity: 1;}
+.gemini_bracelet8 .text_bg{ width:20.68%;  position: absolute; left: 61%; top: 32.29%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet8.active .text_bg,.ie8 .gemini_bracelet8 .text_bg{ opacity: 1;}
+.gemini_bracelet8 .text{ width:18.02%;  position: absolute; left:62.5%; top: 34.03%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.ie9 .gemini_bracelet8 .text{ width:18.02%;  position: absolute; left:60.5%; top: 36.03%; opacity:0; }
+.gemini_bracelet8.active .text,.ie8 .gemini_bracelet8 .text{ top: 35.35%; opacity: 1;}
+
+/*手环九*/
+.gemini_bracelet9{ width: 100%; position: relative;}
+.gemini_bracelet9 .time{ width:8.85%;  position: absolute; right: 63.3%; top:44.6%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet9.active .time,.ie8 .gemini_bracelet9 .time{ top: 41.6%; opacity: 1;}
+.gemini_bracelet9 .watch09{ width: 12.81%;  position: absolute; left: 45.02%; top: 28.92%; display: block; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet9.active .watch09,.ie8 .gemini_bracelet9 .watch09{ left: 43.02%; opacity: 1;}
+.gemini_bracelet9 .text_bg{ width:20.83%;  position: absolute; left: 61%;; top: 39.08%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet9.active .text_bg,.ie8 .gemini_bracelet9 .text_bg{ top: 37.08%; opacity: 1;}
+.gemini_bracelet9 .text{ width:18.65%;  position: absolute; left:63.3%; top: 40.43%; opacity:0; -webkit-transition:all 1s ease-in; -moz-transition:all 1s ease-in; -o-transition:all 1s ease-in;-ms-transition:all 1s ease-in;transition:all 1s ease-in;}
+.gemini_bracelet9.active .text,.ie8 .gemini_bracelet9 .text{ left:63.3%; opacity: 1;}
+
+/* 设置了浏览器宽度不大于1200px时 abc 显示900px宽度 */ 
+
+@media screen and (max-width: 1025px) { 
+    .gemini_bracelet1 .seven_textbg{ width: 22.68%;position: absolute; left: 61%; top: 24.73%; opacity: 0; -webkit-transition:all 1s ease-in 0s;-moz-transition:all 1s ease-in 0s; -o-transition:all 1s ease-in 0s;-ms-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;}
+    .gemini_bracelet1.active .seven_textbg{top: 26.73%;opacity: 1;}
+    .gemini_bracelet1 .seven_text{ width: 20.07%;position: absolute; left: 62.5%; top: 30.12%; opacity: 0; -webkit-transition:all 1s ease-in 0.3s;-moz-transition:all 1s ease-in 0.3s; -o-transition:all 1s ease-in 0.3s;-ms-transition:all 1s ease-in 0.3s;transition:all 1s ease-in 0.3s;font-family: "微软雅黑";color: #fff;  line-height: 1.5rem; }
+    .gemini_bracelet1.active .seven_text,.ie8 .gemini_bracelet1 .seven_text{ left:62.5%; opacity:1;  }
+    /*手环二*/ 
+    .gemini_bracelet2{ width: 100%; position: relative;}
+    .gemini_bracelet2 .nine_textbg{ width: 22.625%;}
+    .gemini_bracelet2 .nine_text{ width: 20.13%;}
+    .ie9 .gemini_bracelet2 .nine_text{ width: 20.13%;}
+    /*手环三*/
+    .gemini_bracelet3 .ten_textbg{ width: 22.625%;}
+    .gemini_bracelet3 .ten_text{ width: 19.29%;}
+    .ie9 .gemini_bracelet3 .ten_text{ width: 19.29%;}
+    /*手环四*/
+    .gemini_bracelet4 .twelve_textbg{ width: 22.625%;}
+    .ie9 .gemini_bracelet4 .twelve_textbg{ width: 22.625%;}
+    .gemini_bracelet4 .twelve_text{ width: 19.76%;}
+    /*手环五*/
+    .gemini_bracelet5 .text_bg{ width:22.26%;}
+    .gemini_bracelet5 .text{ width:19.5%;}
+    .ie9 .gemini_bracelet5 .text{ width:19.5%;}
+    /*手环六*/
+  .gemini_bracelet6 .text_bg{ width:22.625%; }
+  .gemini_bracelet6 .text{ width:20.07%;}
+  /*手环七*/
+.gemini_bracelet7 .text_bg{ width:22.625%;}
+.ie9 .gemini_bracelet7 .text_bg{ width:22.625%;}
+.gemini_bracelet7 .text{ width:20.07%;}
+.ie9 .gemini_bracelet7 .text{ width:20.07%; }
+
+/*手环八*/
+.gemini_bracelet8 .text_bg{ width:22.68%;}
+.gemini_bracelet8 .text{ width:20.02%;}
+.ie9 .gemini_bracelet8 .text{ width:20.02%; }
+
+/*手环九*/
+.gemini_bracelet9 .text_bg{ width:22.83%;}
+.gemini_bracelet9 .text{ width:20.65%;}
+} 
+
+#cbg-main {
+  margin-top: 67px;
+}
+.sdw  div.product-nav .product-icon {
+  text-indent: -9999px;
+  width: 171px;
+  height: 48px;
+  background-image: url(../images/product-icon-b3.jpg); background-position: 0 0;
+  margin-right: 15px;
+}
+.sdw  div.product-nav{display: block;}
+.visible_hi{-moz-backface-visibility: hidden; -webkit-backface-visibility:hidden; -ms-backface-visibility: hidden; -o-backface-visibility: hidden;backface-visibility: hidden;}
+
+.sdw  div.product-nav .top li {
+  float:left;
+  line-height: 48px;
+}
+.sdw  div.product-nav .top li a {display:block;margin-right:10px;}
+.sdw  div.product-nav .nav-split {margin:18px 10px 0 0;}
+
+
+.overlay .detail-pos-buy-button{ float: right; margin-left: 15px; color: #fff;}
+.detail-pos-buy-button{ display: block; letter-spacing: 3px; position: relative; height: 28px; line-height: 28px; padding: 0 10px; /* margin-top: 8.5px; */ background: url(data:image/gif;base64,R0lGODlhAQAcAMQAAAAAAP///6UXF6kZGaYYGKUYGKsaGqgZGacZGa0bG7AcHK8cHKwbG7MdHbIdHbQeHrcfH7YfH7whIbkgIL4iIrohIcEjI8AjI70iIsQkJMMkJMIkJMUlJcQlJf///wAAACH5BAEAAB4ALAAAAAABABwAAAUXINdl2mZdFCZVExQ9jaMsCWMMB0IUQggAOw==) #b21d1d repeat-x; color: #fff!important; border-radius: 1px;}
+.detail-pos-buy-button:hover{ background: url(data:image/gif;base64,R0lGODlhAQAcAJEAAAAAAP///8UlJf///yH5BAEAAAMALAAAAAABABwAAAIElI+pWwA7) #c52525 repeat-x;}
+.detail-pos-buy-button:hover span{ color: #fff!important;}

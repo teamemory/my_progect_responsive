@@ -1,0 +1,63 @@
+//@module: Theme and Title
+LAG_CON_S00X01 = "华为盒子M330";
+//@module: Product Relative
+LAG_CON_S01X01 = "功能特征";
+LAG_CON_S01X02 = "产品展示";
+LAG_CON_S01X03 = "规格参数";
+LAG_CON_S01X04 = "服务支持";
+LAG_CON_S01X05 = "立即购买";
+
+//@module: Screen 2
+LAG_CON_S02X01 = "清晰视界 给你绚丽想象";
+LAG_CON_S02X02 = "华为盒子带来更高的清晰度，4K极清视频输出，分辨率高达3840x2160像素，清晰度是1080P的4倍；同时支持H.265编码技术，节省50%的带宽，再加上海思第4代专业媒体解码器，解码能力比普通4核盒子提升100%，画面更加绚丽。";
+//@module: Screen 3
+LAG_CON_S03X01 = "正版内容 权威保障";
+LAG_CON_S03X02 = "稳定和可靠的服务是华为品质的承诺。华为盒子唯一接入央广银河集成播控平台，提供持续稳定的正版内容服务保障，让你不再有盒子变砖头的后顾之忧。";
+//@module: Screen 4
+LAG_CON_S04X01 = "海量资源 想看就看";
+LAG_CON_S04X02 = "华为盒子唯一接入央广银河的播控平台，依托央广TV等众多内容服务平台，汇聚超过200万小时的海量高清正版影视资源。每日更新超过1000个节目，内容涉及好莱坞大片、综艺、动漫，音乐、纪录片等丰富资源，让你尽情看个痛快！";
+//@module: Screen 5
+LAG_CON_S05X01 = "有蓝牙 无所限";
+LAG_CON_S05X02 = "华为盒子专门配备蓝牙4.0，可外接多个蓝牙设备，减少空间限制。蓝牙手柄冲锋陷阵，蓝牙遥控器360度无死角遥控；蓝牙音箱，轻松组建无线家庭影院。一种功能，多重享受。<br/>*以上蓝牙设备非标配，需单独购买";
+//@module: Screen 6
+LAG_CON_S06X01 = "游戏从未如此酣畅";
+LAG_CON_S06X02 = "当游戏狂人遇上华为盒子，一场酣畅淋漓的游戏大战即将开始。一个外接游戏手柄配备一个清晰电视大屏，游戏时间自由畅享。同时，盒子预置“游戏中心”，各种类型游戏轻松下载，只有想不到，没有玩不到。<br/>*推荐北通阿修罗系列游戏手柄（BTP-2585、BTP-2185等型号）";
+//@module: Screen 7
+LAG_CON_S07X01 = "独特接口 信号随意切";
+LAG_CON_S07X02 = "独特STB输入接口，可透过传统高清机顶盒HDMI信号，随意在华为盒子及机顶盒之间切换信号源，免去HDMI线插拔和视频源输入切换烦恼，与机顶盒无缝连接。";
+//@module: Screen 8
+LAG_CON_S08X01 = "离线缓存 流畅观影";
+LAG_CON_S08X02 = "华为盒子支持离线缓存功能，只需一张Micro SD卡或USB存储设备，在线视频轻松缓存到本地。";
+LAG_CON_S08X03 = "微信找片 一键推送";
+LAG_CON_S08X04 = "关注“华为荣耀盒子”微信公众号，即可使用“遥控器”和“微信推片”功能，一键推送至电视播放。";
+//@module: Screen 9
+LAG_CON_S09X01 = "给孩子 只看合适的";
+LAG_CON_S09X02 = "电视节目的选择是父母最忧心的问题。不管是内容还是时段，华为盒子贴心为你掌控，根据年龄的设定，推荐适合不同年龄段的儿童节目，给孩子一个更健康电视空间。";
+//@module: Screen 10
+LAG_CON_S10X01 = "老电视 智能大变身";
+LAG_CON_S10X02 = "老电视没有HDMI口也不怕——配合华为CVBS模拟视频输出线，老式电视瞬间变身智能电视，让家里的老电视在互联网时代也能发挥余热，变废为宝。";
+//@module: Screen 11
+LAG_CON_S11X01 = "0延时互动，玩转多屏";
+LAG_CON_S11X02 = "华为盒子轻松实现多个屏幕的互通互联，支持标准Miracast，手机/平板屏幕内容同步到电视；支持无限投射，华为“多屏互动”的手机/平板可一键链接电视屏幕；支持主流DLNA客户端软件以及SAMBA本地网络访问。";
+//@module: Screen 12
+LAG_CON_S12X01 = "丰富接口，无限扩展";
+LAG_CON_S12X02 = "蓝牙4.0 Wi-Fi 300M 互补式全向双天线";
+//@module: Screen 13
+LAG_CON_S13X01 = "配件随心选";
+LAG_CON_S13X02 = "蓝牙遥控器  华为盒子底座  SPDIF线(连接功放)   CVBS模拟视频输出线(连接老式电视)<br/>*以上配件非标配，需单独购买<br/>*如果需要购买CVBS线及SPDIF线，请购买华为盒子专属选配件";
+
+//@module: Relative links
+//Gallery
+LNK_CON_S01X02 = "http://consumer.huawei.com/cn/smart-home/gallery/mediaq-m330.htm";
+//Specifications
+LNK_CON_S01X03 = "http://consumer.huawei.com/cn/smart-home/tech-specs/mediaq-m330.htm";
+//Support
+LNK_CON_S01X04 = "http://consumer.huawei.com/cn/support/smart-home/mediaq_m330_cn-sup.htm";
+
+//@module: Page links
+//Page Top/Foot Site
+LNK_CON_S00X02 = "http://consumer.huawei.com/cn";
+//Page Mobile
+LNK_CON_S00X04 = "http://m.huawei.com/cnmobile/consumer/smart-home/detail/mediaq-m330.htm";
+//mvall
+LNK_CON_S00X05 = "http://shopcn.huawei.com/item/34395245.html";

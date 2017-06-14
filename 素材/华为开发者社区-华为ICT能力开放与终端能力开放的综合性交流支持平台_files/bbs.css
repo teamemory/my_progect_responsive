@@ -1,0 +1,356 @@
+html, body {
+			font-family: "微软雅黑";
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+    background-color: #F0F2F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{ 
+    border-radius: 8px;
+    background-color: #F0F2F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 8px; 
+    background-color: #bfc3c6;
+}		
+		@media(min-width: 992px){
+			.bbs-about .bbs-grid-padding{
+				padding: 0 10px;
+			}
+		}
+		@media (min-width: 1200px) {
+			.bbs-tip img{
+				width: 100%;
+				height: auto;
+			}
+			.bbs-grid .bbs-grid-description-en {
+				max-width: 380px;
+			}
+			.bbs-grid .bbs-grid-description-ch {
+				max-width: 220px;
+			}
+		}
+		.bbs-container {
+			  background: #d5dee3 url(../img/bbs_bg.jpg) no-repeat left bottom;
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+        z-index: 0;
+		}
+		.bbs-header {
+			padding: 22px 50px;
+			overflow: hidden;
+		}
+		.bbs-logo {
+			float: left;
+		}
+		.bbs-logo img {
+        width: 100%;
+        max-width: 330px;
+    }
+		.bbs-lang {
+			float: right;
+			line-height: 14px;
+			padding-right: 28px;
+			padding-top: 24px;
+		}
+		.bbs-lang a {
+			color: #91989e;
+			display: inline-block;
+			line-height: 14px;
+		}
+		.bbs-lang a:first-child {
+			border-right: 1px solid #91989e;
+			padding-right: 8px;
+		}
+		.bbs-lang a.active {
+			color: #414343;
+		}
+		.bbs-content {
+			color: #323232;
+			margin-top: 40px;
+			height: 100%;
+			padding-bottom: 50px;
+		}
+		.bbs-content-box {
+			width: 76%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.bbs-title {
+			font-size: 50px;
+			line-height: 60px;
+			font-weight: 600;
+		}
+		.bbs-title-spacing {
+			letter-spacing: 17px;
+		}
+		.bbs-title-en {
+      font-size: 42px;
+      line-height: 52px;
+      margin-bottom: 10px;
+      font-family: arial;
+    }
+		.bbs-subtitle {
+			margin-top: 10px;
+			margin-bottom: 55px;
+			line-height: 36px;
+			font-size: 26px;
+			color: #808080;
+		}
+		.bbs-subtitle-en {
+        font-size: 24px;
+        font-family: arial;
+        margin-bottom: 65px;
+    }
+		.bbs-grid {
+			height:242px;
+			filter: alpha(opacity=85);
+			background: #fbfbfb;
+			background: rgba(251,251,251,0.8);
+			padding: 38px 15px 20px 45px;
+			-webkit-box-shadow: 8px 8px 35px #d2cecf;
+			-moz-box-shadow: 8px 8px 35px #d2cecf;
+			box-shadow: 0 8px 35px #b9b7b9;
+		}
+		.bbs-grid-padding{
+			padding: 10px 0;
+		}
+		.bbs-grid p {
+			font-size: 16px;
+			color: #a1a1a1;
+			margin-top: 20px;
+			text-align: left;
+			padding-left: 15px;
+			line-height: 30px;
+			max-height: 90px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 3;		
+		}
+		.bbs-tip img{
+		  width: 100%;
+		}
+		
+		.bbs-tip{
+			text-align: left;
+			border-left: 5px solid #ff0000;
+			padding-left: 10px;
+			width: 100%;
+		}
+		/*en only*/
+		.en-region .bbs-tip img{
+			max-width: 291px;
+		}
+		.en-networks .bbs-tip img{
+			max-width: 360px;
+		}
+		.en-users .bbs-tip img{
+			max-width: 371px;
+		}
+		.mobile-regions,.mobile-network,.mobile-users,.mobile-users,.mobile_bbs_device,.mobile_bbs_bt02,.mobile_bbs_ict,.mobile_bbs_bt01{
+		  display: none;
+		}
+		/**/
+		/*ch only*/
+		.ch-region .bbs-tip img {
+			max-width: 221px;
+		}
+		.ch-networks .bbs-tip img {
+			max-width: 278px;
+		}
+		.ch-users .bbs-tip img {
+			max-width: 334px;
+		}
+		/*ch only*/
+		.bbs-links {
+			padding-top: 50px;
+			clear: both;
+		}
+		.bbs-links a{
+			display: block;
+		}
+		.bbs-device, .bbs-ict {
+			display: inline-block;
+		}
+		.bbs-device-icon, .bbs-ict-icon {
+			height: 41px;
+			margin-left: 15px;
+			text-align: left;
+		}
+		.bbs-device-icon {
+			padding-top: 5px;
+		}
+		.bbs-ict-icon {
+			padding-top: 9px;
+		}
+		.bbs-btn {
+			margin-top: 19px;
+		}
+		.bbs-footer {
+			 height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 20px 10px;
+		}
+		.bbs-copyright {
+			color: #dbb3b1;
+			text-align: center;	
+			margin: 0;
+		}
+/*手机端*/
+.mobile .bbs-header{
+  padding:0.8333rem 1.524rem;
+}
+.mobile .bbs-header>div{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.mobile .bbs-logo{
+  width: 52%;
+}
+.mobile .bbs-lang{
+  width: 45%;
+  text-align: right;
+  padding-right: 0;
+  padding-top:0px;
+}
+/*.mobile .bbs-logo img{
+  height: 1.666rem;
+}*/
+.mobile .bbs-lang a{
+  font-size: 0.7619rem;
+}
+.mobile .bbs-en .bbs-content{
+  margin-top: 3.0619rem;
+}
+.mobile .bbs-en .bbs-title{
+  font-size: 1.519rem;
+  line-height: 1;
+}
+.mobile .bbs-en .bbs-subtitle {
+    font-size: 0.8571rem;
+    line-height: 1;
+    margin-top: 0.5076rem;
+    margin-bottom: 0.9rem;
+}
+.mobile .bbs-content{
+  margin-top: 3.7619rem;
+}
+.mobile .bbs-content-box{
+  width: 88.149%;
+}
+.mobile .bbs-title{
+  font-size: 1.619rem;
+  line-height: 1.5;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.1476rem;
+}
+.mobile .bbs-subtitle{
+  font-size: 0.8571rem;
+  line-height: 1.5;
+  margin-top: 0.1476rem;
+  margin-bottom: 1.2rem;
+}
+.mobile .bbs-grid-padding{
+  padding:0.2381rem 0;
+}
+.mobile .bbs-grid{
+  padding:0.888rem 1.6667rem;
+  height:19.1176%;
+  overflow: hidden;
+}
+.mobile .bbs-tip{
+  width: 41%;
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  border: 0;
+  padding-left: 0;
+}
+/*.mobile .bbs-tip img{
+  
+}*/
+.mobile .bbs-grid-description-ch,.mobile .bbs-grid-description-en{
+  margin: 0;
+  font-size:0.7619rem;
+  padding-left: 1.3rem;
+  line-height: 1.5;
+}
+.mobile .bbs-device,.mobile .bbs-ict{
+  width: 48%;
+}
+.mobile .bbs-device-icon,.mobile .bbs-ict-icon{
+  display: none;
+}
+.mobile .bbs-device-icon>img,.mobile .bbs-ict-icon>img{
+  width: 100%;
+  max-width: 299px;
+}
+.mobile .bbs-btn>img{
+  width: 100%;
+  max-width: 330px;
+}
+.mobile .bbs-footer{
+  display: none;
+}
+.mobile .bbs-links{
+  padding-top: 1.386rem;
+}
+.mobile .pc-regions,.mobile .pc-network,.mobile .pc-users,.mobile .bbs_device,.mobile .bbs_bt02,.mobile .bbs_ict,.mobile .bbs_bt01{
+  display: none;
+}
+.mobile .mobile-regions,.mobile .mobile-network,.mobile .mobile-users,.mobile .mobile_bbs_device,.mobile .mobile_bbs_bt02,.mobile .mobile_bbs_ict,.mobile .mobile_bbs_bt01{
+      display: block;
+}
+.mobile .bbs-btn{
+  margin-top:0.3rem;
+}
+.mobile body.bbs-en .bbs-title{
+  letter-spacing: 0.01rem;
+}
+.mobile body.bbs-en .bbs-subtitle{
+  margin-left: 3.333rem;
+  margin-right: 3.333rem;
+}
+.mobile body.bbs-en .bbs-grid-description-en{
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+.ios.mobile body{
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 360px) and (min-width: 320px){
+	.mobile .bbs-tip>img{
+	  width: 100%;
+	}
+	.mobile body.bbs-en .bbs-logo img {
+      height: 1.4rem;
+  }
+  .ios.mobile body{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-height: 768px) {
+  .bbs-links .bbs-device-icon,.bbs-links .bbs-ict-icon{
+    display: none;
+  }
+}
+.font12{
+	font-size: 12px;
+}
